@@ -1,0 +1,77 @@
+/* Estilo general del cuerpo */
+body {
+  font-family: "Courier New", Courier, monospace;
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+/* Estilo para los bloques del CV */
+.bloque {
+  margin-bottom: 20px;
+  word-wrap: break-word; /* Permitir que las palabras largas se corten y se ajusten a la pantalla */
+  max-width: 100%; /* Hacer que los bloques ocupen el 100% del ancho disponible */
+}
+
+/* Estilo responsivo para textos en pantallas pequeñas */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px; /* Reducir el tamaño general del texto en pantallas pequeñas */
+  }
+  
+  .bloque {
+    font-size: 14px; /* Reducir el tamaño de los bloques para pantallas pequeñas */
+  }
+
+  .header {
+    flex-direction: column; /* Poner el título y la imagen en columnas en pantallas pequeñas */
+    align-items: flex-start;
+  }
+
+  .foto-perfil {
+    margin-top: 10px; /* Añadir espacio superior para separar la imagen del título */
+  }
+}
+
+/* Estilo para el título y foto de perfil */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: #569cd6;
+}
+
+.foto-perfil {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #569cd6;
+}
+
+/* Corchetes y propiedades de código */
+.corchete {
+  color: #9cdcfe;
+}
+
+.propiedad {
+  color: #dcdcaa;
+}
+
+.string {
+  color: #ce9178;
+}
+
+.corchete-cierre {
+  color: #c586c0;
+}
+
+a {
+  color: #d7ba7d;
+  text-decoration: none;
+}
